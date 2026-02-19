@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/aiml_fintech}
+  application:
+    name: aiml-fintech

@@ -193,6 +193,16 @@ cython_debug/
 # Ruff stuff:
 .ruff_cache/
 
+# Java / Maven
+target/
+*.class
+*.jar
+.gradle/
+
+# Node.js / frontend
+node_modules/
+.frontend/
+
 # PyPI configuration file
 .pypirc
 

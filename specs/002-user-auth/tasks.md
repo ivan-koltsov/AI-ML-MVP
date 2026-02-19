@@ -23,11 +23,11 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create backend project structure with backend/pom.xml and backend/src/main/java/com/aiml/fintech/
-- [ ] T002 Initialize backend with Spring Boot 3.x, Spring Security, Spring Data MongoDB in backend/pom.xml
-- [ ] T003 [P] Create frontend project with Vite, React 18, TypeScript in frontend/
-- [ ] T004 [P] Configure backend application.yml with MongoDB URI and server port in backend/src/main/resources/application.yml
-- [ ] T005 [P] Configure frontend .env with VITE_API_URL placeholder for API base URL
+- [x] T001 Create backend project structure with backend/pom.xml and backend/src/main/java/com/aiml/fintech/
+- [x] T002 Initialize backend with Spring Boot 3.x, Spring Security, Spring Data MongoDB in backend/pom.xml
+- [x] T003 [P] Create frontend project with Vite, React 18, TypeScript in frontend/
+- [x] T004 [P] Configure backend application.yml with MongoDB URI and server port in backend/src/main/resources/application.yml
+- [x] T005 [P] Configure frontend .env with VITE_API_URL placeholder for API base URL
 
 ---
 
@@ -37,13 +37,13 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T006 Create User document model in backend/src/main/java/com/aiml/fintech/auth/User.java
-- [ ] T007 Create UserRepository extending MongoRepository in backend/src/main/java/com/aiml/fintech/auth/UserRepository.java
-- [ ] T008 Implement SecurityConfig with BCryptPasswordEncoder and session management in backend/src/main/java/com/aiml/fintech/config/SecurityConfig.java
-- [ ] T009 Implement AuthService with signIn, signUp, signOut methods in backend/src/main/java/com/aiml/fintech/auth/AuthService.java
-- [ ] T010 Implement AuthController with POST /auth/sign-in, /auth/sign-up, /auth/sign-out and GET /auth/me in backend/src/main/java/com/aiml/fintech/auth/AuthController.java
-- [ ] T011 [P] Add structured logging for auth events in backend/src/main/java/com/aiml/fintech/auth/AuthService.java
-- [ ] T012 [P] Configure CORS for dev frontend origin in backend/src/main/java/com/aiml/fintech/config/WebConfig.java or SecurityConfig.java
+- [x] T006 Create User document model in backend/src/main/java/com/aiml/fintech/auth/User.java
+- [x] T007 Create UserRepository extending MongoRepository in backend/src/main/java/com/aiml/fintech/auth/UserRepository.java
+- [x] T008 Implement SecurityConfig with BCryptPasswordEncoder and session management in backend/src/main/java/com/aiml/fintech/config/SecurityConfig.java
+- [x] T009 Implement AuthService with signIn, signUp, signOut methods in backend/src/main/java/com/aiml/fintech/auth/AuthService.java
+- [x] T010 Implement AuthController with POST /auth/sign-in, /auth/sign-up, /auth/sign-out and GET /auth/me in backend/src/main/java/com/aiml/fintech/auth/AuthController.java
+- [x] T011 [P] Add structured logging for auth events in backend/src/main/java/com/aiml/fintech/auth/AuthService.java
+- [x] T012 [P] Configure CORS for dev frontend origin in backend/src/main/java/com/aiml/fintech/config/WebConfig.java or SecurityConfig.java
 
 **Checkpoint**: Foundation ready - user story implementation can now begin
 
@@ -57,10 +57,10 @@
 
 ### Implementation for User Story 1
 
-- [ ] T013 [US1] Create authApi.ts with signIn and getCurrentUser in frontend/src/services/authApi.ts
-- [ ] T014 [US1] Create SignInPage with email and password form in frontend/src/pages/SignInPage.tsx
-- [ ] T015 [US1] Add sign-in route and redirect to home on success in frontend
-- [ ] T016 [US1] Add protected route guard redirecting unauthenticated users to sign-in in frontend
+- [x] T013 [US1] Create authApi.ts with signIn and getCurrentUser in frontend/src/services/authApi.ts
+- [x] T014 [US1] Create SignInPage with email and password form in frontend/src/pages/SignInPage.tsx
+- [x] T015 [US1] Add sign-in route and redirect to home on success in frontend
+- [x] T016 [US1] Add protected route guard redirecting unauthenticated users to sign-in in frontend
 
 **Checkpoint**: User Story 1 fully functional - sign-in works end-to-end
 
@@ -74,9 +74,9 @@
 
 ### Implementation for User Story 2
 
-- [ ] T017 [P] [US2] Add signUp method to frontend/src/services/authApi.ts
-- [ ] T018 [US2] Create SignUpPage with email and password validation in frontend/src/pages/SignUpPage.tsx
-- [ ] T019 [US2] Add sign-up route and redirect to home after successful sign-up in frontend
+- [x] T017 [P] [US2] Add signUp method to frontend/src/services/authApi.ts
+- [x] T018 [US2] Create SignUpPage with email and password validation in frontend/src/pages/SignUpPage.tsx
+- [x] T019 [US2] Add sign-up route and redirect to home after successful sign-up in frontend
 
 **Checkpoint**: User Stories 1 and 2 both work - sign-up and sign-in independently testable
 
@@ -90,9 +90,9 @@
 
 ### Implementation for User Story 3
 
-- [ ] T020 [P] [US3] Add signOut method to frontend/src/services/authApi.ts
-- [ ] T021 [US3] Create SignOut button and wire to signOut + redirect in frontend
-- [ ] T022 [US3] Add sign-out to app shell/navigation and ensure protected routes redirect when logged out
+- [x] T020 [P] [US3] Add signOut method to frontend/src/services/authApi.ts
+- [x] T021 [US3] Create SignOut button and wire to signOut + redirect in frontend
+- [x] T022 [US3] Add sign-out to app shell/navigation and ensure protected routes redirect when logged out
 
 **Checkpoint**: All user stories independently functional
 
@@ -102,7 +102,7 @@
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T023 [P] Contract test for auth API against specs/002-user-auth/contracts/auth-api.yaml in backend/src/test/java/com/aiml/fintech/contract/AuthApiContractTest.java
+- [x] T023 [P] Contract test for auth API against specs/002-user-auth/contracts/auth-api.yaml in backend/src/test/java/com/aiml/fintech/contract/AuthApiContractTest.java
 - [ ] T024 Run quickstart.md validation (backend + frontend + MongoDB)
 
 ---
